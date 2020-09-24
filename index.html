@@ -3,82 +3,141 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="css/master.css">
   </head>
   <body>
 
     <!-- prima row intestazione sito -->
     <header>
-      <div class="row">
+      <div class="row blue-row">
         <!-- div cerca-login-download -->
-        <div class="blue-row">
+        <div class="container">
 
-        <div class="lngs">
-          <select class="languages" name="languages">
-            <option value="english">English</option>
-          </select>
-          <span class="contact">Contact Us</span>
-        </div>
+          <div class="lngs">
 
-        <form class="info" action="index.html" method="post">
-          <!-- cerca -->
-          <input type="search type" class="src" placeholder="Search...">
-          <!-- login -->
-          <input class="log-in" type="button" name="log-in" value="Log In">
-          <!-- download -->
-          <input class="first download" type="button" name="button" value="Get Hubspot Free">
+            <select class="languages" name="languages">
+              <option value="english">English</option>
+            </select>
 
-        </form>
+            <span class="contact">Contact Us</span>
+          </div>
 
+          <!-- input -->
+          <div class="info">
+            <form action="index.html" method="post">
+
+              <input type="search type" class="src" placeholder="Search...">
+
+              <input class="log-in" type="button" name="log-in" value="Log In">
+
+              <input class="small-download button" type="button" value="Get Hubspot Free">
+            </form>
+          </div>
         </div>
       </div>
+
       <!-- barra logo e menu -->
-      <nav class="menu">
 
-        <div class="logo">
-          <img src="" alt="logo site">
-        </div>
 
-        <ul class="menu-list">
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
-          <li>home</li>
-        </ul>
 
-      </nav>
-      <!-- descrizione del sito e download -->
-      <div class="free-download">
-        <div class="description">
-          <h2>There's better way to go.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <button class="second download" type="button" name="button">Get Hubspot Free</button>
-          <p class="additional-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-      </div>
-
-      <div class="main-divider"></div>
-
-      <main>
-        <!-- sezione powerful alone -->
-        <section class="features">
-
-          <div class="powerful-alone">
-            <div class="cube">
-              <img src="" alt="cubo">
+        <nav class="menu">
+          <div class="container">
+            <div class="logo">
+              <img src="" alt="logo site">
             </div>
-            <h2>Powerful Alone. Better Togheter</h2>
-
-            <p class="offers">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="">
+              <ul class="menu-list">
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+                <li>home</li>
+              </ul>
+            </div>
 
           </div>
-        </section>
 
-      </main>
+
+        </nav>
+
+      <!-- descrizione del sito e download -->
+      <div class="row-orange">
+        <div class="container">
+          <div class="title-h1">
+            <h1>There's better way to <br> grow.</h1>
+            <p class="text-15">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="big-download button" type="button" name="button">Get Hubspot Free</button>
+            <p class="text-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+
+        </div>
+      </div>
+      <!-- colonna di destra -->
+      <div class="col right">
+      </div>
+
 
 
     </header>
+
+    <div class="main-divider"></div>
+
+    <main>
+      <!-- sezione seconda riga del sito -->
+      <section class="principal-row">
+        <div class="container">
+
+          <div class="cube block">
+            <img src="" alt="cubo">
+          </div>
+
+          <div class="call-to-action block">
+            <h2>Powerful Alone. Better Togheter</h2>
+
+            <p class="text-15 block">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <div class="container four-col">
+
+            <div class="horizontal col">
+              <div class="icon">
+                <img src="" alt="icona">
+              </div>
+              <input class="button w-120 h-50" type="button" value="Learn more">
+            </div>
+
+            <div class="vertical col">
+              <div class="icon">
+                <img src="" alt="icona">
+              </div>
+              <input class="button w-120 h-50" type="button" value="Learn more">
+            </div>
+
+            <div class="vertical col">
+              <div class="icon">
+                <img src="" alt="icona">
+              </div>
+              <input class="button w-120 h-50" type="button" value="Learn more">
+            </div>
+
+            <div class="vertical col">
+              <div class="icon">
+                <img src="" alt="icona">
+              </div>
+              <input class="button w-120 h-50" type="button" value="Learn more">
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+      </section>
+
+    </main>
+
 
 
 

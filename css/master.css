@@ -5,6 +5,12 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+
 /* prima row */
 
 .blue-row{
@@ -44,23 +50,23 @@
 }
 
 /* download */
-.first.download {
+.small-download {
   width: 150px;
   height: 30px;
   margin-left: 10px;
 }
 
-.download {
+.button {
   border-radius: 5px;
   background-color: #ff7a59;
   border: #ff7a59;
   color: white;
 }
 
-.second.download {
-  width: 170px;
-  height: 70px;
-  margin-top: 20px;
+.big-download {
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
 }
 
 /* barra logo e menu */
@@ -71,23 +77,42 @@
 
 .menu {
   background-color: #ffffff;
-  width: 100vw;
+  width: 100%;
   height: 50px;
 }
 
 /* lista */
-.menu-list {
-  text-align: right;
-  padding: 10px;
+.menu::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+
+.menu-list {
+  float: right;
+  padding: 10px;
+  line-height: 50px;
+
+}
+
 
 ul.menu-list li {
   display: inline;
   padding: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  vertical-align: middle;
 }
 
 /* descrizione del sito & download */
-.free-download {
+.row-orange::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.row-orange {
   width: 100vw;
   height: 450px;
   background-color: #fff4ee;
@@ -95,10 +120,10 @@ ul.menu-list li {
   position: relative;
 }
 
-.description {
-  position: absolute;
-  margin: 70px 70px;
-  width: 300px;
+.title-h1 {
+  width: 500px;
+  float: left;
+  margin-top: 50px;
 }
 
 .additional-info {
@@ -115,25 +140,75 @@ ul.menu-list li {
 }
 
 /* seconda sezione */
-.features {
+.principal-row {
   width: 100vw;
   height: 1200px;
   background-color: #eaf0f6;
-  position: relative;
-}
 
-.powerful-alone {
-  text-align: center;
-  width: 500px;
-  position: absolute;
 }
 
 .cube {
-  height: 200px;
+  height: 150px;
 }
 
-.offers {
-  margin-top: 50px;
-  
-  width: 500px;
+.block {
+  text-align: center;
+}
+
+/* paragrafi di testo */
+.text-10{
+  font-size: 10px;
+  margin-top: 30px;
+}
+
+.text-15 {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+/* colonna orizzonale e verticali */
+
+.four-col {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  margin-top: 30px;
+  line-height: 100%;
+}
+
+.col {
+  background-color: #ffffff;
+}
+
+.horizontal {
+  width: 100%;
+  height: 270px;
+  border-radius: 5px;
+
+}
+
+.vertical {
+  margin-top: 30px;
+  width: 250px;
+  height: 500px;
+  display: inline-block;
+  border-radius: 5px;
+}
+ /* WARNING: ASSOLUTAMENTE DA RIGUARDARE MARGINI BLOCCHI VERTICALI!!! FUNZ CALC???
+   */
+
+.vertical:nth-child(3) {
+  margin-right: 73px;
+}
+
+.vertical:nth-child(2) {
+  margin-right: 65px;
+}
+
+.vertical:nth-child(4) {
+}
+
+.button.w-120.h-50 {
+  width: 120px;
+  height: 50px;
 }
